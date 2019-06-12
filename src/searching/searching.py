@@ -1,4 +1,4 @@
-# STRETCH: implement Linear Search				
+# STRETCH: implement Linear Search 				
 def linear_search(arr, target):
   
   # TO-DO: add missing code
