@@ -46,8 +46,14 @@ def merge( arrA, arrB ):
 # TO-DO: implement the Merge Sort function below USING RECURSION
 def merge_sort( arr ):
     # TO-DO
-
-
+    # if the length of the array is greater than 1
+    if len( arr ) > 1:
+        # set the left side with recursion passing an argument to merge_sort that slices the arr in half so you have the left side
+        left = merge_sort( arr[ 0 : len( arr ) // 2 ] )
+        # set the right side with recursion passing an argument to merge_sort that slices the arr i half so you have the right side
+        right = merge_sort( arr[ len( arr ) // 2 : ] )
+        # set arr by using the merge helper function to sort and put the parts back together
+        arr = merge( left, right )
     return arr
 
 
