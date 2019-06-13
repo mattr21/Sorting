@@ -3,6 +3,13 @@ import random
 from recursive_sorting import *
 
 class RecursiveSortingTests(unittest.TestCase):
+    # def test_merge(self):
+    #     arr1 = [1, 2, 6, 10]
+    #     arr2 = [2, 3, 5, 9000, 9999]
+
+    #     self.assertEqual(merge(arr1, arr2), [1, 2, 2, 3, 5, 6, 10, 9000, 9999])
+
+
     def test_merge_sort(self):
         arr1 = [1, 5, 8, 4, 2, 9, 6, 0, 3, 7]
         arr2 = []
